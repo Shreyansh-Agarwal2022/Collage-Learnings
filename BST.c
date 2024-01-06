@@ -118,6 +118,7 @@ node* delete(node* root,int key)
     {
         if (root->left == NULL && root->right == NULL)
         {
+            free(root);
             return NULL;
         }
         else if (root->left == NULL)
